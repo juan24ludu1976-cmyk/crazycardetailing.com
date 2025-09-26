@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0f686a repeat center top; 
+    font: .81em/150% Arial, Helvetica, sans-serif; 
+    color: #030303;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#container{
+    width: 100%; 
+    margin: auto; 
+    position: relative; 
+    background: #b5b7b9;
+}
+
+#header{
+    position: relative;
+    height: 35px;
+}
+
+#header hgroup{
+    text-align: center;
+}
+
+#header hgroup label{
+    font-size: x-large;
+    font-style: italic;
+    color: #0c0c0c;
+}
+
+#container .form-group1{
+    clear: both;
+    width: 50%;
+    height: 85px;
+    margin: 0;
+    float: left;
+    border: 2px solid #d8d8d8e0;
+    background-color: #919393;
+    padding: 7px;
+}
+
+.form-group1 input{
+    width: 50px;
+    margin: 1px;
+    border: solid #fff;
+    text-align: center;
+}
+
+#container .form-group2{
+    width: 50%;
+    height: 85px;
+    float: left;
+    border: 2px solid #e1dfdf;
+    background-color: #919393;
+    padding: 7px;
+}
+
+.form-group2 label{
+    margin: 2px;
+}
+
+.form-group2 input{
+    width: 45px;
+    margin: 1px;
+    border-radius: 10 solid #fffefe;
+    text-align: center;
+}
+
+#container .form-group3{
+    width: 100%;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+thead{
+    background-color: #919393;
+}
+
+/*.form-group3 tr td input{
+    width: 100%;
+    /*resize: vertical;
+}*/
+
+.form-group4{
+    width: 100%;
+    margin: 1px;
+    padding: 0;
+    height: 115px;
+}
+
+.form-group4 ul li label{
+    margin: 2px;
+}
+.form-group4 ul li{
+    width: 90%;
+    list-style: none;
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+.form-group4 ul{
+    width: 90%;
+    display: inline-block;
+}
+
+.form-group4 ul li{
+    width: 85px;
+    position: relative;
+    display: inline;
+}
+
+.form-group4 ul input{
+    width: 75px;
+    border-top: solid #0b0b0b;
+}
+.secc-1{
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    height: 115px;
+    position: absolute;
+}
+
+.secc-1 textarea{
+    overflow-y: scroll;
+    width: 40%;
+    height: 50px;
+    margin: 5px;
+    resize: none;
+}
+
+.form-group4 .secc-2{
+    width: 80%;
+    height: 115px;
+    margin: 2px;
+    padding: 0px;
+    float: right;
+}
+
+.secc-2 .list-1{
+    width: 90%;
+    display: inline;
+}
+
+.secc-2 .list-2{
+    width: 90%;
+    display: inline;
+}
+
+.form-group4 .secc-2 .list-2 input{
+    width: 315px;
+    float: left;
+}
+
+.form-group4 .secc-2 .list-3{
+    width: 100%;
+    display: inline;
+    float: left;
+}
+
+.secc-2 .list-3{
+    width: 100%;
+    margin: 0px;
+    display: inline;
+}
+
+.form-group4 .secc-2 .list-3 ul li{
+    margin: 1px;
+    float: left;
+}
+
+.form-group4 .secc-2 .list-3 ul li label{
+    clear: both;
+    width: 350px;
+    float: left;
+}
+
+.form-group4 .secc-2 .list-3 input{
+    margin-left: 20px;
+    float: left;
+}
+
+.form-group4 .secc-2 .list-3 button{
+    float:right;
+}
+
+          
+.btn{
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-size: .6rem;
+    font-weight: 30;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .btn:hover {
+    box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
+  }
+  
+  .resizable{
+    position: relative; /*Para poder posicionar el divisor*/
+  }
+
+  .resizer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #ccc;
+    cursor: col-resize;
+    touch-action: none;
+  }
+
+  .resizing{
+    background-color: #eee; /*Opcional: resalta la columna que se esta redimensionando*/
+  }
+
+/* para 980px o menos */
+@media screen and (max-width:980px) {
+    #container {
+        width:98%;
+    }
+    #header {
+        width:98%;
+    }
+    .elem-group-dato1 {
+        width:96%;
+    }
+    .elem-group-dato2 {
+        width:96%;
+    }
+    .botonera {
+        width:96%;
+    }
+}
+
+/* para 980px o menos */
+@media screen and (max-width:980px) {
+    #container {
+        width:98%;
+    }
+    #header {
+        width:98%;
+    }
+    .form-group1 {
+        width:47%;
+    }
+    .form-group2 {
+        width:49%;
+    }
+    .panel-body {
+        width:98%;
+    }
+}
+
+/* para 700px o menos */
+@media screen and (max-width:700px) {
+    .header, .form-group1, .form-group2, .panel-body{
+        font-size:1.2em;
+    }
+    .header, .form-group1, .form-group2, .panel-body{
+        margin-top:5px;
+        width: auto;
+        height: auto;
+    }
+    .header, .form-group1, .form-group2, .panel-body{
+        float:none;
+        clear:both;
+    }
+}
+
+/* para 480px o menos */
+@media screen and (max-width:480px) {
+    #container{
+        width:98%;
+        margin: 0;
+        height: 500px;
+    }
+
+    .header, .form-group1, .form-group2, .panel-body {
+        font-size:1em;
+    }
+    .header, .form-group1, .form-group2, .panel-body {
+        width:auto;
+        margin: 0;
+        height: auto;
+    }
+    .header, .form-group1, .form-group2, .panel-body {
+        float:left;
+        clear:none;
+    }
+    .header, .form-group1, .form-group2, .panel-body, label, input{
+        display: inline;
+        width: 100%;
+        clear: none;
+    }
+}

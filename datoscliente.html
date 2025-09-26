@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<title>Datos del Cliente</title>
+<link rel="stylesheet" href="css/estilodato.css">
+<link rel="stylesheet" href="dist/js/maxmincerr.js">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div id="container">
+            <header id="header">
+                <img src="img\logo.jpg" id="logo" alt = "logo">
+                <label>DATOS DEL CLIENTE</label>
+                <button type="submit" id="close-button" value="Cerrar" name="cerrar">x</button>
+                <button type="submit" id="minimize-button" value="Minimizar" name="minimizar">-</button>
+                <button type="submit" id="maximize-button" value="Maximizar" name="maximizar">+</button>
+            </header>
+            <form class="form" action="" method="post">
+                <div class="elem-group-dato1">
+                    <label class="label1">Cliente Principal</label>
+                    <input class="form-control1" type="nombre" name="Nombre" id="nombre" disabled>
+                    <label class="label2">Cliente Secundario</label>
+                    <input class="form-control2" type="nombre" name="Nombre" id="nombre">
+                    <label class="label3">Nombre/Raz. Social</label>
+                    <input class="form-control3" type="nombre" name="RazSocial" id="razonsocial">
+                    <label class="label4">Direcci&oacute;n</label>
+                    <input class="form-control4" type="direccion" name="Direccion" id="direccion">
+                    <label class="label5">Localidad</label>
+                    <input class="form-control5" type="localidad" name="Localidad" id="localidad">
+                    <label class="label6">CP</label>
+                    <input class="form-control6" type="codigopostal" name="CodigoPostal" id="codigopostal">
+                    <label class="label7">Provincia</label>
+                    <input class="form-control7" type="provincia" name="Provincia" id="provincia">
+                    <label class="label8">CORDOBA</label>
+                    <label class="label9">Zona</label>
+                    <input class="form-control9" type="zona" name="Zona" id="zona">
+                    <label class="label0">Sin Dato</label>
+                </div>
+                <div class="elem-group-dato2">
+                    <label class="label11">IVA</label>
+                    <input class="form-control11" type="iva" name="IVA" id="iva">
+                    <label class="label12">Consumidor Final</label>
+                    <label class="label13">CUIT</label>
+                    <input class="form-control13" type="cuit" name="Cuit" id="cuit">
+                    <label class="label14">Ing. Bruto</label>
+                    <input class="form-control14" type="ingbruto" name="IngresoBruto" id="ingresobruto">
+                </div>
+                <div class="botonera">
+                    <button type="submit" class="btn btn-default" value="Cancelar" name="BotonCancelarr">Cancelar</button>
+                    <button type="submit" class="btn1 btn-default" value="Confirmar" name="BotonConfirmar">Confirmar y Continuar</button>
+                </div>
+            </form>
+    </div>
+</body>
+</html>

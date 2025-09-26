@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #0f686a repeat center top;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 60%; 
+    height: 450px;
+    margin: auto;
+    background: #b5b7b9;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elem-group-dato{
+    width: 98%;
+    height: 389px;
+    margin: 5px;
+    padding: 6px;
+    display: inline-block;
+    border: 1px solid #fff;
+}
+
+.elem-group-dato label{
+    width: 150px;
+    margin: 40px;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.elem-group-dato input{
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    height: 30px;
+}
+
+.selector label input{
+    margin: 0;
+    display: inline-block;
+}
+
+.botonera{
+    font-size: .5rem;
+    font-weight: 20;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+
+.botonera button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: rgba(0,0,0,);
+    background-color: rgb(188, 181, 195);
+    cursor: pointer;
+    user-select: none;
+}
+
+button:hover{
+    background-color: rgb(109, 104, 112);
+}

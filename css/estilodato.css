@@ -1,0 +1,311 @@
+*{
+    margin: 0; 
+    padding: auto;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #0f686a repeat center top;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 50%; 
+    height: 450px;
+    margin: auto;
+    background: #b5b7b9;
+}
+
+#header{
+	width: 99%;
+	margin: 0 auto;
+	position: relative; 
+	height: 50px; 
+	border: 1px solid rgb(253, 252, 252);
+	background: hsl(0, 2%, 72%);
+}
+
+#logo, fieldset {border: 0;}
+#logo {
+	max-width: 40%;
+	height: 40px; 
+	border-radius: 15px; 
+	position: relative; 
+	padding: 5px 5px;
+}
+
+#header label{
+    margin-left: 30%;
+}
+
+#header button{
+    width: 5%;
+    height: 45%;
+    display: block;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(34, 34, 34, 0.5);
+    float: right;
+}
+
+.panel-heading{
+    text-align: center;
+    width: 97%;
+    height: 5%;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #fff;
+}
+
+.elem-group-dato1{
+    width: 97%;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #fff;
+}
+
+.elem-group-dato1 input{
+    margin: 5px;
+}
+
+.label1{
+    margin-left: 65px;
+    width: 50%;
+}
+
+.form-control1{
+    width: 15%;
+}
+
+.label2{
+    margin-left: 85px;
+    width: 50%;
+}
+
+.form-control2{
+    width: 14%;
+}
+
+.label3{
+    margin-left: 44px;
+    width: 50%;
+}
+
+.form-control3{
+    width: 62%;
+}
+
+.label4{
+    margin-left: 105px;
+    width: 50%;
+}
+
+.form-control4{
+    width: 62%;
+}
+
+.label5{
+    margin-left: 104px;
+    width: 30%;
+}
+
+.form-control5{
+    width: 30%;
+}
+
+.label6{
+    margin-left: 44px;
+    width: 50%;
+}
+
+.form-control6{
+    width: 10%;
+}
+
+.label7{
+    margin-left: 105px;
+    width: 50%;
+}
+
+.form-control7{
+    width: 5%;
+}
+
+.label8{
+    margin-left: 10px;
+    width: 20%;
+}
+
+.label9{
+    margin-left: 145px;
+    margin-right: 5px;
+    width: 20%;
+}
+
+.form-control9{
+    width: 5%;
+}
+
+.elem-group-dato2{
+    width: 97%;
+    height: 70px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #fff;
+}
+
+.label11{
+    margin-left: 65px;
+    width: 50%;
+}
+
+.form-control11{
+    width: 5%;
+}
+
+.label12{
+    margin-left: 0px;
+    width: 20%;
+}
+
+.label13{
+    margin-left: 75px;
+    width: 20%;
+}
+
+.form-control13{
+    width: 32%;
+}
+
+.label14{
+    margin-left: 144px;
+    width: 30%;
+}
+
+.form-control14{
+    width: 30%;
+}
+
+.elem-group-dato2 input{
+    margin: 5px;
+}
+
+.botonera{
+    margin: 10px;
+    font-size: .5rem;
+    font-weight: 20;
+}
+
+.btn1{
+    margin-left: 25%;
+}
+
+.botonera button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: rgba(0,0,0,);
+    background-color: rgb(188, 181, 195);
+}
+
+button:hover{
+    background-color: rgb(109, 104, 112);
+}
+
+
+/* para 980px o menos */
+@media screen and (max-width:980px) {
+    #container {
+        width:98%;
+    }
+    #header {
+        width:98%;
+    }
+    .elem-group-dato1 {
+        width:96%;
+    }
+    .elem-group-dato2 {
+        width:96%;
+    }
+    .botonera {
+        width:96%;
+    }
+}
+
+/* para 980px o menos */
+@media screen and (max-width:980px) {
+    #container {
+        width:98%;
+    }
+    #header {
+        width:98%;
+    }
+    .elem-group-dato1 {
+        width:96%;
+    }
+    .elem-group-dato2 {
+        width:96%;
+    }
+    .botonera {
+        width:98%;
+    }
+}
+
+/* para 700px o menos */
+@media screen and (max-width:700px) {
+    .header, .elem-group-dato1, .elem-group-dato2, .botonera{
+        font-size:1.2em;
+    }
+    .header, .elem-group-dato1, .elem-group-dato2, .botonera {
+        margin-top:5px;
+        width: auto;
+        height: auto;
+    }
+    .header, .elem-group-dato1, .elem-group-dato2, .botonera {
+        float:none;
+        clear:both;
+    }
+}
+
+/* para 480px o menos */
+@media screen and (max-width:480px) {
+    #container{
+        width:100%;
+        margin: 0;
+        height: 500px;
+    }
+
+    .header, .elem-group-dato1, .elem-group-dato2, .botonera  {
+        font-size:1em;
+    }
+    .header, .elem-group-dato1, .elem-group-dato2, .botonera {
+        width:auto;
+        margin: 0;
+        height: auto;
+    }
+    .header, .elem-group-dato1, .elem-group-dato2, .botonera {
+        float:left;
+        clear:none;
+    }
+    .header, .elem-group-dato1, .elem-group-dato2, .botonera, label, input{
+        display: inline;
+        width: 100%;
+        clear: none;
+    }
+}
